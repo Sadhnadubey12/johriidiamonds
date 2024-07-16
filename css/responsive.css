@@ -1074,17 +1074,19 @@ footer .topFooter .widget{width:320px;float:none;display:block;height:auto;margi
 	#breadcrumbRow h2 {
 	font-size: 32px;
 	}
-	
+	.blog_inner {
+		display: block!important;
+	}
 	.blog_inner .blog_j_img {
 		overflow: hidden;
 		position: relative;
-		width: 50%;
+		width: 100%;
 	}
 	.blog_inner.single .blog_j_text {
 		width: 100%;
 	}
 	.blog_j_text {
-		width: 50%;
+		width: 100%;
 		display: block!important;
 		padding: 15px 0 15px;
 	}
