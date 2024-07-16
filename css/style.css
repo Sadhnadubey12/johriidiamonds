@@ -3017,31 +3017,44 @@ button:hover {
     text-align: center
 }
 
-.featureCats .owl-nav div.owl-prev {
+.featureCats2 .owl-nav div {
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 44px;
+    line-height: 56px;
+    color: #91786f;
+    font-size: 28px;
+    /* background:rgb(155, 134, 134); */
+    text-align: center
+}
+
+
+
+.featureCats .owl-nav div.owl-prev, .featureCats2 .owl-nav div.owl-prev {
     left: 0
 }
 
-.featureCats .owl-nav div.owl-next {
+.featureCats .owl-nav div.owl-next, .featureCats2 .owl-nav div.owl-next {
     right: 0
 }
 
-.featureCats .item {
+.featureCats .item, .featureCats2 .item {
     padding: 0 15px;
     text-transform: uppercase;
     text-align: center;
     overflow: hidden
 }
 
-.featureCats .item .imgHov {
+.featureCats .item .imgHov, .featureCats2 .item .imgHov {
     position: relative;
     overflow: hidden
 }
 
-.featureCats .item .imgHov img {
+.featureCats .item .imgHov img , .featureCats2 .item .imgHov img {
     width: 100%
 }
 
-.featureCats .item .imgHov .hovArea {
+.featureCats .item .imgHov .hovArea, .featureCats2 .item .imgHov .hovArea {
     font-family: 'Cormorant Infant', serif;
     position: absolute;
     width: 100%;
@@ -3055,14 +3068,14 @@ button:hover {
     opacity: 0
 }
 
-.featureCats .item .imgHov .hovArea i {
+.featureCats .item .imgHov .hovArea i, .featureCats2 .item .imgHov .hovArea i {
     font-size: 22px;
     line-height: 1;
     margin-top: -250%;
     transition: all 300ms ease-in-out 0s
 }
 
-.featureCats .item .imgHov .hovArea h4 {
+.featureCats .item .imgHov .hovArea h4, .featureCats2 .item .imgHov .hovArea h4 {
     line-height: 60px;
     font-weight: 700;
     font-size: 18px;
@@ -3070,7 +3083,7 @@ button:hover {
     transition: all 300ms ease-in-out 0s
 }
 
-.featureCats .item .imgHov .hovArea a {
+.featureCats .item .imgHov .hovArea a, .featureCats2 .item .imgHov .hovArea a {
     font-size: 12px;
     line-height: 30px;
     background: #222;
@@ -3082,27 +3095,27 @@ button:hover {
     position: relative
 }
 
-.featureCats .item a h4 {
+.featureCats .item a h4, .featureCats2 .item a h4 {
     font-size: 16px;
     font-family: 'Cormorant Infant', serif;
     color: #222;
     line-height: 40px
 }
 
-.featureCats .item:hover .imgHov .hovArea {
+.featureCats .item:hover .imgHov .hovArea, .featureCats2 .item:hover .imgHov .hovArea {
     left: 0;
     opacity: 1
 }
 
-.featureCats .item:hover .imgHov .hovArea i {
+.featureCats .item:hover .imgHov .hovArea i, .featureCats2 .item:hover .imgHov .hovArea i {
     margin-top: 0
 }
 
-.featureCats .item:hover .imgHov .hovArea h4 {
+.featureCats .item:hover .imgHov .hovArea h4, .featureCats2 .item:hover .imgHov .hovArea h4 {
     margin: 0
 }
 
-.featureCats .item:hover .imgHov .hovArea a {
+.featureCats .item:hover .imgHov .hovArea a, .featureCats2 .item:hover .imgHov .hovArea a {
     margin-bottom: 0
 }
 
@@ -4504,7 +4517,7 @@ footer.footer2 .copyRight {
 				   /*10 Shortcodes*/
 /*--------------------------------------------------*/
 .shortcodesRow {
-    margin-top: 80px!important;
+    /* margin-top: 80px!important; */
     padding-bottom: 0
 }
 
@@ -7030,7 +7043,7 @@ body.home-2 footer .copyRight {
     font-size: 15px;
 }
 
-.featureCats .item .imgHov {
+.featureCats .item .imgHov, .featureCats2 .item .imgHov {
     background-color: #f7f7f7
 }
 
@@ -7407,11 +7420,70 @@ body.home-2 .logo {
     border-radius: 50%;
 }
 
-@keyframes blink {
-    0%, 49.9% {
-        opacity: 0;
-    }
-    50%, 100% {
-        opacity: 1;
-    }
+/* Video */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
 }
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container video::-webkit-media-controls {
+    display: none !important; /* Hide controls in Chrome/Safari */
+}
+
+.video-container video::-webkit-media-controls-enclosure {
+    display: none !important; /* Hide controls in Chrome/Safari */
+}
+
+.video-container video::-webkit-media-controls-panel {
+    display: none !important; /* Hide controls in Chrome/Safari */
+}
+
+.video-container video::-webkit-playsinline {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.video-container video::-webkit-media-controls-start-playback-button {
+    display: none !important; /* Hide play button in Chrome/Safari */
+}
+
+.video-container video::-webkit-media-controls-play-button {
+    display: none !important; /* Hide play button in Chrome/Safari */
+}
+
+.video-container video::-webkit-media-controls-timeline {
+    display: none !important; /* Hide timeline in Chrome/Safari */
+}
+
+.video-container video::-webkit-media-controls-current-time-display {
+    display: none !important; /* Hide current time display in Chrome/Safari */
+}
+
+.video-container video::-webkit-media-controls-time-remaining-display {
+    display: none !important; /* Hide time remaining display in Chrome/Safari */
+}
+
+.video-container video::-webkit-media-controls-mute-button {
+    display: none !important; /* Hide mute button in Chrome/Safari */
+}
+
+.video-container video::-webkit-media-controls-volume-slider {
+    display: none !important; /* Hide volume slider in Chrome/Safari */
+}
+
+.video-container video::-webkit-media-controls-volume-slider-container {
+    display: none !important; /* Hide volume slider container in Chrome/Safari */
+}
+

@@ -133,6 +133,28 @@ jQuery(document).ready(function(){
                 }
             }
         }); 
+        jQuery('.featureCats2').owlCarousel({
+            loop:true,
+            margin:0,
+            responsiveClass:true,
+            nav: true,
+            navText: [ '<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>' ],
+            autoplay: false,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:true
+                },
+                1000:{
+                    items:4,
+                    nav:true
+                }
+            }
+        }); 
         jQuery('.d-carousel-cener').owlCarousel({
             center: true,
             items:5,
