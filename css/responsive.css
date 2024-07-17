@@ -130,7 +130,7 @@
 #header3 .logo_line .searchSec .wishlistCompare{width:100%;margin-right:0;text-align:center;float:none}
 #header3 .logo_line .searchSec .wishlistCompare .nav{float:none}
 #header3 .logo_line .searchSec .cartCount{margin-top:22px}
-#header3 .navbar #mainNav{max-height:400px;border-bottom:5px solid #c1a89f;padding:0}
+#header3 .navbar #mainNav{max-height:400px;padding:0}
 #header3 .navbar #mainNav .nav{margin:0}
 #header3 .navbar #mainNav .nav li{clear:left}
 #header3 .navbar #mainNav .nav li a{line-height:35px}
@@ -861,7 +861,7 @@ footer .topFooter .widget{width:320px;float:none;display:block;height:auto;margi
     #header3 .navbar #mainNav .nav li a, #header3 .navbar #mainNav .nav > li:first-child > a {
     	padding-left: 15px; 
     	padding-right: 15px;
-    	border-bottom: 1px solid rgba(255,255,255,0.03)
+    	/* border-bottom: 1px solid rgba(255,255,255,0.03) */
     }
     #header .navbar #mainNav .nav li a, #header .navbar #mainNav .nav > li:first-child > a {
     	border-bottom: 1px solid rgba(0,0,0,0.05)

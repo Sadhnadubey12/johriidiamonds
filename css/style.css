@@ -7391,7 +7391,7 @@ body.home-2 .logo {
 .icon-container {
     position: fixed;
     bottom: 50px;
-    left: 20px;
+    right: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -7487,3 +7487,21 @@ body.home-2 .logo {
     display: none !important; /* Hide volume slider container in Chrome/Safari */
 }
 
+/* Adjust the vertical positioning of the navbar items */
+.navbar-nav {
+    margin-top: 10px; /* Adjust the value as needed */
+}
+
+/* Align the search item with other list items */
+.navbar-nav .offers_navbtn {
+    margin-left: auto; /* Pushes the search button to the left like others */
+}
+
+.navbar-nav .offers_navbtn a {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .offers_navbtn a i {
+    margin-right: 5px; /* Space between icon and text */
+}
