@@ -7391,7 +7391,7 @@ body.home-2 .logo {
 .icon-container {
     position: fixed;
     bottom: 50px;
-    right: 20px;
+    right: 50px;
     display: flex;
     flex-direction: column;
     gap: 15px;
