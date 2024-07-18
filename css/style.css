@@ -7392,7 +7392,8 @@ body.home-2 .logo {
     position: fixed;
     z-index: 1000;
     bottom: 50px;
-    right: 50px;
+    right: 10px;
+    /* border:2px solid red; */
     display: flex;
     flex-direction: column;
     gap: 15px;
